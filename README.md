@@ -29,16 +29,22 @@ O componente Spring Framework Inversion of Control (IoC) aborda essa preocupaç�
 
 
 
-## Módulos da Estrutura
+## Módulos da Estrutura Spring Framework
 
 ![image](https://user-images.githubusercontent.com/52088444/159912165-f0617a94-2058-458a-8469-eba2deaf11b5.png)
 
-- Resumo o Core Container é o nucleo principal do Spring. O core e o beans eles fornecem a estrutura/partes principais do Spring, dentro delas temos o IoC(É a inversão de controle) e injeção de dependencias, Beanfactory implementação do designer partner. Context (Internacionalização e aplicationContext, ele pega a beans factory e extende a bean factory). Expression language define através de xml ou anotações em tempo de execução, valores e comportamentos do beans.
+- Como podemos ver acima oSpring Framework ele tem classes básicas e avançadas, ou seja ele é dividido em 7 grupos, como Data Acesss para transações com o Banco de dados, Web para construirmos aplicações web, AOP para programação orientada a aspectos, Instrumentação, orientação a mensagem, teste tanto unitários quanto integrados e o core Container.
+- O core container é o grupo principal , pois é dentro dele que está a implementação da inversão de controle(Ioc)
+        - Inversão de Controler(Ioc) é um padrão de projetos , em que um objeto apenas declara suas dependencias sem criá-las e delega a tarefa de construir tais dependências a um Container IoC(Core Container).Inversão de controle é abstrato é um padrão de projeto, e o Spring se utiliza da Injeção de dependências.
+        - Injeção de Dependências: é a implementação utilizada pelo o spring Framework de aplicar a Inversão de Controle quando necessário.No core Container do Spring é onde está a implemetntação da Injeção de dependencia que nada mais é do que a implementação de Inversão de Controle
+        - Bean: é um objeto que é instanciado, montado e gerenciado por um container do Spring através da Inversão de Controle (Ioc) e injeção de Dependencias. Exemplos de Estereótipos do Spring: @Component(algo mais generico), @Service(classe de serviços), @Repository (classe de persistencia com o Banco de dados, transações), @Controller(para criarmos os endpoints)
 
 ![image](https://user-images.githubusercontent.com/52088444/159928669-b46941b7-0397-4bb6-ab59-b97d0b66365a.png)
 
 
 As seções a seguir listam os módulos disponíveis para cada recurso junto com seus nomes de artefatos e os tópicos que eles cobrem. Os nomes dos artefatos são correlacionados aos IDs dos artefatos usados nas ferramentas de Gerenciamento de Dependência .
+
+
 
 **Contêiner Principal**
 
@@ -123,6 +129,14 @@ Quando você precisar acessar o código existente por meio de serviços da Web, 
 ![image](https://user-images.githubusercontent.com/52088444/159926794-0a00eb0b-2c73-45bb-9f4d-4320dd8b1994.png)
 
 O Spring Framework também fornece uma camada de acesso e abstração para Enterprise JavaBeans, permitindo que você reutilize seus POJOs existentes e os envolva em beans de sessão sem estado para uso em aplicativos da Web escaláveis ​​e à prova de falhas que possam precisar de segurança declarativa.
+
+
+## Spring Boot
+
+
+
+
+
 
 
 

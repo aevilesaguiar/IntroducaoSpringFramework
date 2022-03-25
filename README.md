@@ -134,6 +134,12 @@ O Spring Framework também fornece uma camada de acesso e abstração para Enter
 ## Spring Boot
 
 
+Spring Boot é um outro projeto que faz parte do ecossistema Spring.
+
+Spring Boot é como se fosse uma somatória do Spring Framework, com um servidor embutido que pode ser um Tocat ou Nety, menos arquivos de configuração ou muitas classes de configuração.
+
+![image](https://user-images.githubusercontent.com/52088444/160166634-079b35aa-f4c8-40ff-a67b-ab11093ae1eb.png)
+
 
 
 
